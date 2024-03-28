@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D1DC0B32BAF78540006208D /* MainTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1DC0B22BAF78540006208D /* MainTitleView.swift */; };
 		5D5887152BADD24900F24157 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5887142BADD24900F24157 /* ExploreView.swift */; };
 		5D6D3A432BA8A27F00B05937 /* ConstellationsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6D3A422BA8A27F00B05937 /* ConstellationsApp.swift */; };
 		5D6D3A452BA8A27F00B05937 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6D3A442BA8A27F00B05937 /* ContentView.swift */; };
@@ -17,6 +18,9 @@
 		5D6D3A602BA8A28100B05937 /* ConstellationsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6D3A5F2BA8A28100B05937 /* ConstellationsUITestsLaunchTests.swift */; };
 		5D6D3A752BA8A56100B05937 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6D3A742BA8A56100B05937 /* FeedView.swift */; };
 		5D6D3A782BA8A62100B05937 /* TweetRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6D3A772BA8A62100B05937 /* TweetRowView.swift */; };
+		5D6FE9CB2BB0AB0600ECBCAC /* verdana-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D6FE9C82BB0AB0600ECBCAC /* verdana-bold.ttf */; };
+		5D6FE9CC2BB0AB0600ECBCAC /* verdana-bold-italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D6FE9C92BB0AB0600ECBCAC /* verdana-bold-italic.ttf */; };
+		5D6FE9CD2BB0AB0600ECBCAC /* verdana.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D6FE9CA2BB0AB0600ECBCAC /* verdana.ttf */; };
 		5DB347A92BAB694000F6446D /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB347A82BAB694000F6446D /* FontManager.swift */; };
 		5DB347AB2BAB812A00F6446D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB347AA2BAB812A00F6446D /* Color.swift */; };
 		5DB347AE2BAB850300F6446D /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB347AD2BAB850300F6446D /* MainTabView.swift */; };
@@ -41,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D1DC0B22BAF78540006208D /* MainTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTitleView.swift; sourceTree = "<group>"; };
 		5D5887142BADD24900F24157 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
 		5D6D3A3F2BA8A27F00B05937 /* Constellations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Constellations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D6D3A422BA8A27F00B05937 /* ConstellationsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstellationsApp.swift; sourceTree = "<group>"; };
@@ -54,6 +59,10 @@
 		5D6D3A5F2BA8A28100B05937 /* ConstellationsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstellationsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5D6D3A742BA8A56100B05937 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		5D6D3A772BA8A62100B05937 /* TweetRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetRowView.swift; sourceTree = "<group>"; };
+		5D6FE9C82BB0AB0600ECBCAC /* verdana-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "verdana-bold.ttf"; sourceTree = "<group>"; };
+		5D6FE9C92BB0AB0600ECBCAC /* verdana-bold-italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "verdana-bold-italic.ttf"; sourceTree = "<group>"; };
+		5D6FE9CA2BB0AB0600ECBCAC /* verdana.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = verdana.ttf; sourceTree = "<group>"; };
+		5D6FE9CE2BB0AC8200ECBCAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5DB347A82BAB694000F6446D /* FontManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
 		5DB347AA2BAB812A00F6446D /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		5DB347AD2BAB850300F6446D /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
@@ -124,6 +133,7 @@
 		5D6D3A412BA8A27F00B05937 /* Constellations */ = {
 			isa = PBXGroup;
 			children = (
+				5D6FE9CE2BB0AC8200ECBCAC /* Info.plist */,
 				5D6D3A6E2BA8A50A00B05937 /* Services */,
 				5D6D3A6D2BA8A50400B05937 /* Models */,
 				5D6D3A6C2BA8A4FA00B05937 /* Extensions */,
@@ -199,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				5D6D3A762BA8A5F100B05937 /* Tweets */,
+				5D1DC0B22BAF78540006208D /* MainTitleView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -235,9 +246,20 @@
 			path = Tweets;
 			sourceTree = "<group>";
 		};
+		5D6FE9C72BB0AAE400ECBCAC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5D6FE9C92BB0AB0600ECBCAC /* verdana-bold-italic.ttf */,
+				5D6FE9C82BB0AB0600ECBCAC /* verdana-bold.ttf */,
+				5D6FE9CA2BB0AB0600ECBCAC /* verdana.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		5DB347A72BAB692500F6446D /* Universals */ = {
 			isa = PBXGroup;
 			children = (
+				5D6FE9C72BB0AAE400ECBCAC /* Fonts */,
 				5DB347A82BAB694000F6446D /* FontManager.swift */,
 			);
 			path = Universals;
@@ -357,7 +379,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D6D3A4A2BA8A28100B05937 /* Preview Assets.xcassets in Resources */,
+				5D6FE9CC2BB0AB0600ECBCAC /* verdana-bold-italic.ttf in Resources */,
+				5D6FE9CB2BB0AB0600ECBCAC /* verdana-bold.ttf in Resources */,
 				5D6D3A472BA8A28100B05937 /* Assets.xcassets in Resources */,
+				5D6FE9CD2BB0AB0600ECBCAC /* verdana.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +413,7 @@
 				5DB347B02BAB869900F6446D /* CustomTabBar.swift in Sources */,
 				5D6D3A782BA8A62100B05937 /* TweetRowView.swift in Sources */,
 				5D6D3A752BA8A56100B05937 /* FeedView.swift in Sources */,
+				5D1DC0B32BAF78540006208D /* MainTitleView.swift in Sources */,
 				5DB347AE2BAB850300F6446D /* MainTabView.swift in Sources */,
 				5D6D3A432BA8A27F00B05937 /* ConstellationsApp.swift in Sources */,
 				5DB347AB2BAB812A00F6446D /* Color.swift in Sources */,
@@ -556,6 +582,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Constellations/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Constellations/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -584,6 +611,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Constellations/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Constellations/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

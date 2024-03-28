@@ -14,7 +14,11 @@ struct FontManager {
         
         static let regular = "Times New Roman"
         
-        
+    }
+    
+    struct Verdana {
+    
+        static let boldItalic = "verdana-bold-italic"
     }
     
     
