@@ -8,10 +8,28 @@
 import SwiftUI
 
 struct UserRowView: View {
+ //   let user:User
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        HStack {
+            
+            Image(systemName: "sparkle")
+                .resizable()
+                .frame(width: 34,height: 34)
+            Text("Asterix")
+            Spacer()
+            
+        }
+        .frame(width: .infinity,alignment: .leading)
+        .foregroundColor(.neutral900)
+        .padding(.horizontal)
+        
+    
+        
     }
 }
+
+
 
 #Preview {
     UserRowView()

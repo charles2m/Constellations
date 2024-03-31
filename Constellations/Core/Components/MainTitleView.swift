@@ -20,7 +20,7 @@ struct MainTitleView: View {
                     ZStack(alignment:.leading){
                         Rectangle()
                             .fill(LinearGradient(gradient: Gradient(colors: [.primary500, .neutral200]), startPoint: .leading, endPoint: .trailing))
-                            .frame(width: geometry.size.width / 2, height: 24) // La moitié de la largeur de l'écran
+                            .frame(width: geometry.size.width / 2, height: 34) // La moitié de la largeur de l'écran
                         
                             .offset(y: 10) // Décalage vertical
                         
@@ -40,7 +40,7 @@ struct MainTitleView: View {
                         }, label: {
                             HStack(spacing:2){
                                 Image(systemName:"sparkle")
-                                    .foregroundColor(.primary500)
+                                    .foregroundColor(.neutral900)
                                 Text("Moi")
                                     .font(.custom("Verdana", size: 14))
                                 Image(systemName:"chevron.right")
@@ -51,7 +51,7 @@ struct MainTitleView: View {
                             .padding(.vertical,8)
                             .foregroundColor(.neutral900) // Couleur de premier plan de la capsule
                             .clipShape(Capsule())
-                            .background(Color.primary200)
+                            .background(Color.neutral200)
                             .cornerRadius(22)
                             .overlay(
                                 Capsule()

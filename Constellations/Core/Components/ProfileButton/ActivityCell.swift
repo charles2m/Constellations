@@ -8,11 +8,43 @@
 import SwiftUI
 
 struct ActivityCell: View {
+    var icon:String
+    var title:String
+    var isAvailable:Bool
+    var screenWidth = UIScreen.main.bounds.width
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        VStack(alignment:.leading){
+            
+            HStack{
+                Image(icon)
+                    .resizable()
+                    .frame(width:20, height:20)
+                    .foregroundColor(.white)
+                Spacer()
+                Image(systemName: "chevron.right.circle.fill")
+                    .foregroundColor(.white)
+                    .frame(width: 30,height: 30)
+            }
+            Spacer()
+            HStack{
+                Text(title)
+                Spacer()
+                Text("+ 10 pts")
+                
+            }
+            .foregroundColor(.white)
+        }
+        .padding(.horizontal,8)
+        .padding(.vertical,8)
+        .frame(width: screenWidth - 34,height: 100)
+       
+        .background(Color.neutral900)
+        .cornerRadius(13)
+        .accentColor(Color.purple)
     }
 }
 
 #Preview {
-    ActivityCell()
+    ActivityCell(icon: "person.2", title: "Méditer", isAvailable: true)
 }

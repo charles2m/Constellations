@@ -65,7 +65,7 @@ struct MainTabBarButton:View {
                     Image(systemName: image)
                         .resizable()
                         .frame(width: 44, height: 44, alignment: .center)
-                        .foregroundColor(.primary800)
+                        .foregroundColor(.neutral900)
                     
                      
              

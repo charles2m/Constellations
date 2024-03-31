@@ -25,7 +25,7 @@ struct MainTabView: View {
             case "plus":
                 Color.purple
                 
-            case "rank":
+            case "list.star":
                ExploreView()
                 
             case "star":
