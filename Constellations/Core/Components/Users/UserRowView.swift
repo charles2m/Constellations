@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct UserRowView: View {
- //   let user:User
+  let user:User
     var body: some View {
         
         HStack {
@@ -16,7 +16,7 @@ struct UserRowView: View {
             Image(systemName: "sparkle")
                 .resizable()
                 .frame(width: 34,height: 34)
-            Text("Asterix")
+            Text(user.username)
             Spacer()
             
         }
@@ -32,5 +32,5 @@ struct UserRowView: View {
 
 
 #Preview {
-    UserRowView()
+    UserRowView(user: User(username: "Mark", fullname: "Zuck", email: ""))
 }

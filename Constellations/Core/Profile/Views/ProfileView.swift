@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct ProfileView: View {
+   @EnvironmentObject var viewModel: AuthViewModel
     @Environment(\.presentationMode) var mode
+    var user:User
     var body: some View {
         ZStack {
             VStack{
@@ -24,26 +26,27 @@ struct ProfileView: View {
                             .resizable()
                             .frame(width:20,height:16)
                             .foregroundColor(.neutral900)
-                            
+                        
                     })
-                       Spacer()
-                       
-                       Text("Asterix")
-                           .bold()
-                       
-                       Menu {
-                           Button(action: {
-                               // Action à effectuer lors du clic sur le bouton
-                           }) {
-                               Text("Se déconnecter")
-                           }
-                       } label: {
-                           Image(systemName: "ellipsis.circle")
-                               .resizable()
-                               .frame(width: 30, height: 30)
-                               .foregroundColor(.black)
-                       }
-                   }
+                    Spacer()
+               
+                        Text(user.username)
+                            .bold()
+                        
+                        Menu {
+                            Button(action: {
+                                viewModel.signOut()
+                            }) {
+                                Text("Se déconnecter")
+                            }
+                        } label: {
+                            Image(systemName: "ellipsis.circle")
+                                .resizable()
+                                .frame(width: 30, height: 30)
+                                .foregroundColor(.black)
+                        }
+                    
+                }
                    .padding()
                    
                    HStack {
@@ -105,7 +108,8 @@ struct ProfileView: View {
 }
 
 #Preview {
-    ProfileView()
+    ProfileView(user: User(username: "Jeff", fullname: "Besos", email: ""))
+                
 }
 
 

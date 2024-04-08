@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct FeedView: View {
-    
+    @EnvironmentObject var authViewModel:AuthViewModel
     @State var isHide = false
     var body: some View {
         ZStack {
@@ -37,12 +37,14 @@ struct FeedView: View {
                         .toolbar(content: {
                             ToolbarItem(placement: .topBarTrailing) {
                                 NavigationLink {
-                                    ProfileView()
+                                    if let user = authViewModel.currentUser {
+                                        ProfileView(user: user)
+                                    }
                                 } label: {
                                     HStack(spacing:2){
                                         Image(systemName:"sparkle")
                                             .foregroundColor(.neutral900)
-                                        Text("Moi")
+                                        Text("Mon profil")
                                             .font(.custom("Verdana", size: 14))
                                         Image(systemName:"chevron.right")
                                         
@@ -69,11 +71,13 @@ struct FeedView: View {
                         }) .hidenNavBarOnSwipe(true)
                     }
                     VStack{
-                        Rectangle()
+                        /*
+                        TweetRectangle()
                             .foregroundColor(Color.neutral200) // Couleur du fond d'écran
                             .frame(height: UIApplication.shared.windows.first?.safeAreaInsets.top) // Hauteur de la barre d'état
                             .edgesIgnoringSafeArea(.top) // Ignorer la barre d'état en haut
                         Spacer()
+                         */
                         
                     }
                 }

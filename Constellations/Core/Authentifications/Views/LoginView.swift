@@ -11,7 +11,7 @@ struct LoginView: View {
     
     @State private var email = ""
     @State private var password = ""
-   // @EnvironmentObject var viewModel:AuthViewModel
+    @EnvironmentObject var viewModel:AuthViewModel
     
     var body: some View {
         VStack{
@@ -63,7 +63,7 @@ struct LoginView: View {
             }
             
             Button {
-            //    viewModel.login(withEmail: email, password: password)
+             viewModel.login(withEmail: email, password: password)
             } label: {
                 Text("Se connecter")
                     .font(.headline)

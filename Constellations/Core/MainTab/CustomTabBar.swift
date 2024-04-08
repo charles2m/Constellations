@@ -14,11 +14,11 @@ struct CustomTabBar: View {
         
         
         HStack(spacing:0){
-        TabBarButton(animation: animation, image: "sparkles", selectedTab: $selectedTab)
+            TabBarButton(animation: animation, image: "sparkles", description: "Explorer", selectedTab: $selectedTab)
             
         MainTabBarButton(image: "plus.square.fill", selectedTab: $selectedTab)
             
-        TabBarButton(animation: animation, image: "list.star", selectedTab: $selectedTab)
+            TabBarButton(animation: animation, image: "list.star", description: "Communauté", selectedTab: $selectedTab)
             
             
         }
@@ -60,16 +60,14 @@ struct MainTabBarButton:View {
                 ZStack{
                     RoundedRectangle(cornerRadius: 6)
                             .frame(width:44,height:44)
-                            .shadow(color: .black, radius: 0, x: 0, y: 4)
+                         //   .shadow(color: .black, radius: 0, x: 0, y: 4)
                             .foregroundColor(.white)
                     Image(systemName: image)
                         .resizable()
                         .frame(width: 44, height: 44, alignment: .center)
                         .foregroundColor(.neutral900)
                     
-                     
-             
-                    
+    
                 }
             }
             .overlay(
@@ -87,6 +85,7 @@ struct MainTabBarButton:View {
 struct TabBarButton:View {
     var animation:Namespace.ID
     var image:String
+    var description:String
     
     @Binding var selectedTab:String
     
@@ -102,6 +101,10 @@ struct TabBarButton:View {
                     .foregroundColor(selectedTab == image ? .neutral900 : .gray.opacity(0.8))
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 28,height: 28)
+              
+                    Text(description)
+                        .font(.system(size: 12))
+                        .foregroundColor(selectedTab == image ? .neutral900 : .gray.opacity(0.8))
                 
                 if selectedTab == image {
                     Circle()

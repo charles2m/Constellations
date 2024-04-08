@@ -8,28 +8,29 @@
 import SwiftUI
 
 struct ExploreView: View {
+    @ObservedObject var viewModel = ExploreViewModel()
     var body: some View {
         NavigationView {
             ZStack{
                 VStack{
                   
-                //    MainTitleView(title: "Les Membres", color: .green)
-                    //SearchBar(text: $viewModel.searchText)
-                        //.padding(.horizontal)
+                //    MainTitle)View(title: "Les Membres", color: .green)
+                    SearchBar(text: $viewModel.searchText)
+                        .padding(.horizontal)
                     ScrollView{
                         LazyVStack(alignment:.leading){
-                            ForEach(0...4,id:\.self){ user in
+                            ForEach(viewModel.users){ user in
                                 NavigationLink {
-                                   // ProfileView(user: user)
+                                   ProfileView(user: user)
                                 } label: {
-                                    UserRowView()
+                                    UserRowView(user: user)
                                 }
                             }
                         }
                     }
                     
                 }
-            }  .navigationTitle("Stars")
+            }  .navigationTitle("Communauté")
                 .navigationBarTitleDisplayMode(.inline)
         }
       
