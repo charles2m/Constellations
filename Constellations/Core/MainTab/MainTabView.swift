@@ -8,10 +8,9 @@
 import SwiftUI
 
 struct MainTabView: View {
-    @State var selected:String = ""
+    @State var selected:String = "sparkles"
     
     init() {
-        
         UITabBar.appearance().isHidden = true
     }
     
@@ -22,8 +21,8 @@ struct MainTabView: View {
             case "sparkles":
                 FeedView()
                 
-            case "plus":
-                Color.purple
+            case "plus.square.fill":
+                SelectionView()
                 
             case "list.star":
                ExploreView()

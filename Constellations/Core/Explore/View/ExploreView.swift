@@ -14,13 +14,13 @@ struct ExploreView: View {
             ZStack{
                 VStack{
                   
-                //    MainTitle)View(title: "Les Membres", color: .green)
+              // MainTitleView(title: "Les Membres", color: .green)
                     SearchBar(text: $viewModel.searchText)
                         .padding(.horizontal)
                     ScrollView{
                         LazyVStack(alignment:.leading){
-                            ForEach(viewModel.users){ user in
-                                NavigationLink {
+                            ForEach(viewModel.searchableUsers){ user in
+                                NavigationLink{
                                    ProfileView(user: user)
                                 } label: {
                                     UserRowView(user: user)

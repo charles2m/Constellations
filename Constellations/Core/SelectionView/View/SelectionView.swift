@@ -8,8 +8,36 @@
 import SwiftUI
 
 struct SelectionView: View {
+    private let gridItems = [GridItem(.flexible()),GridItem(.flexible())]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            ZStack{
+                VStack{
+                   // MainTitleView(title: "Créer un Moment", color: .black)
+                    Text("Quelles sont vos envies pour aujourd'hui ? ")
+                        
+                    LazyVGrid(columns: gridItems, spacing: 25) {
+                        NavigationLink (
+                        destination:
+                        MeditationView()
+                         ,label: {
+                            SelectionCell(icon: "medi", text: "Méditer", isAvailable: true)
+                        })
+                        NavigationLink (
+                        destination: MeditationView(),
+                         label: {
+                             SelectionCell(icon: "medi", text: "Créer une discusssion", isAvailable: false)
+                         }).disabled(true)
+                    }
+                    Spacer()
+                    
+                    
+                }
+                
+            }
+            
+        }
     }
 }
 

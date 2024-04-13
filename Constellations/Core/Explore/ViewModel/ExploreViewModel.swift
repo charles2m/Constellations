@@ -10,11 +10,12 @@ import Foundation
 class ExploreViewModel: ObservableObject {
     
     @Published var users = [User]()
-    let service = UserService()
+   
     @Published var searchText = ""
-    
+    let service = UserService()
     
     var searchableUsers : [User] {
+        
         if searchText.isEmpty {
             return users
         } else {
